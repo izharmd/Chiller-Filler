@@ -277,7 +277,7 @@
         <ImageView
             android:layout_width="193dp"
             android:layout_height="76dp"
-            android:src="@drawable/logo3"
+            android:src="@drawable/logo_chiller_filler"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

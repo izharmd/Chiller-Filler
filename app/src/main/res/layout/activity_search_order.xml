@@ -73,7 +73,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSearchOrder"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/_35sdp"
         android:layout_marginLeft="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_20sdp"
         android:layout_marginRight="@dimen/_10sdp"
@@ -89,9 +89,9 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:layout_width="193dp"
-        android:layout_height="76dp"
-        android:src="@drawable/logo3"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/logo_chiller_filler"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

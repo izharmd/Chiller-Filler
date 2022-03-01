@@ -59,63 +59,62 @@
         android:orientation="vertical"
         android:weightSum="1">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        android:layout_weight=".92">
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyMainCategory"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_5sdp">
-
-    </androidx.recyclerview.widget.RecyclerView>
-
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:background="@drawable/round_payment_view">
-
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyTopCategory"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_5sdp">
+            android:layout_height="0dp"
+            android:layout_weight=".90"
+            android:orientation="vertical">
 
-        </androidx.recyclerview.widget.RecyclerView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyMainCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp">
+
+            </androidx.recyclerview.widget.RecyclerView>
 
 
-    </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/round_payment_view">
 
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyProductList"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyTopCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp">
 
-    </androidx.recyclerview.widget.RecyclerView>
+                </androidx.recyclerview.widget.RecyclerView>
 
-    </LinearLayout>
-        
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyProductList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
         <com.volcaniccoder.bottomify.BottomifyNavigationView
             android:id="@+id/bottomify"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight=".08"
+            android:layout_weight=".1"
             android:background="@color/yellow"
             android:orientation="horizontal"
-            app:menu="@menu/nevigation_items"
             app:active_color="@color/bottomifyActiveColor"
-            app:passive_color="@color/black"
-            app:pressed_color="@color/bottomifyPressedColor"
-            app:item_text_size="@dimen/_10sdp"
             app:animation_duration="300"
-           >
+            app:item_text_size="@dimen/_10sdp"
+            app:menu="@menu/nevigation_items"
+            app:passive_color="@color/black"
+            app:pressed_color="@color/bottomifyPressedColor">
 
 
         </com.volcaniccoder.bottomify.BottomifyNavigationView>

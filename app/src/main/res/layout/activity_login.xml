@@ -7,12 +7,13 @@
     android:orientation="vertical">
 
 
-    <LinearLayout
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_160sdp"
-        android:background="@drawable/banner33">
+        android:layout_height="@dimen/_150sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/banner33">
 
-    </LinearLayout>
+    </ImageView>
 
 
     <TextView
@@ -30,51 +31,55 @@
 
 
     <EditText
+        android:id="@+id/edtEmail"
         style="@style/editText"
         android:background="@drawable/round_textview"
         android:drawableLeft="@drawable/email_24"
         android:drawablePadding="@dimen/_5sdp"
         android:hint="Email"
-        android:textColorHint="@color/black"></EditText>
+        android:textColorHint="@color/black" />
 
 
     <EditText
+        android:id="@+id/edtPassword"
         style="@style/editText"
         android:background="@drawable/round_textview"
         android:drawableLeft="@drawable/lock_24"
         android:drawablePadding="@dimen/_5sdp"
         android:hint="Password"
         android:inputType="textPassword"
-        android:textColorHint="@color/black"></EditText>
+        android:textColorHint="@color/black" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_15sdp"
         android:orientation="horizontal"
         android:weightSum="2">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnLogin"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_35sdp"
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:layout_weight="1"
             android:background="@drawable/rippal_cardview"
             android:text="Login"
-            android:textColor="@color/black"></androidx.appcompat.widget.AppCompatButton>
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"></androidx.appcompat.widget.AppCompatButton>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSignUp"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_35sdp"
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:layout_weight="1"
             android:background="@drawable/rippal_cardview"
             android:text="Sign Up"
-            android:textColor="@color/black"></androidx.appcompat.widget.AppCompatButton>
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
 
     </LinearLayout>
 
@@ -192,7 +197,7 @@
         android:id="@+id/txtGuestUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
         android:gravity="center"
 
         android:text="Guest User"
@@ -212,7 +217,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/logo3" />
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/logo_chiller_filler" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.bws.musclefood">
+    package="com.bws.chillerfiller">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
+        android:name=".util.MyApplication"
         android:allowBackup="true"
-        android:icon="@drawable/logo3"
+        android:icon="@drawable/logo_chiller_filler"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/logo3"
+        android:roundIcon="@drawable/logo_chiller_filler"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.MuscleFood">
-        <activity android:name=".SplashActivity">
+        <activity android:name="com.bws.chillerfiller.SplashActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,36 +24,54 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".signup.SignUpActivity"
+        <activity
+            android:name="com.bws.chillerfiller.signup.SignUpActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".login.LoginActivity"
+        <activity
+            android:name="com.bws.chillerfiller.login.LoginActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".itemcategory.ItemCategotyActivity"
+        <activity
+            android:name="com.bws.chillerfiller.itemcategory.ItemCategotyActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".itemcategory.subcategory.SubCategoryActivity"
+        <activity
+            android:name="com.bws.chillerfiller.itemcategory.subcategory.SubCategoryActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".itemcategory.productlist.ProductListActivity"
+        <activity
+            android:name="com.bws.chillerfiller.itemcategory.productlist.ProductListActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".itemcategory.cartlist.CartListActivity"
+        <activity
+            android:name="com.bws.chillerfiller.itemcategory.cartlist.CartListActivity"
             android:screenOrientation="portrait"></activity>
 
 
-        <activity android:name=".delivery.choosedeliveryaddress.ChooseDeliveryAddressActivity"
+        <activity
+            android:name="com.bws.chillerfiller.delivery.choosedeliveryaddress.ChooseDeliveryAddressActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".delivery.deliveryoption.DeliveryOptionActivity"
+        <activity
+            android:name="com.bws.chillerfiller.delivery.deliveryoption.DeliveryOptionActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".delivery.AddNewAddressActivity"
+        <activity
+            android:name="com.bws.chillerfiller.delivery.AddNewAddressActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".payment.PaymentActivity"
+        <activity
+            android:name="com.bws.chillerfiller.payment.PaymentActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".MyProfileActivity"
+        <activity
+            android:name="com.bws.chillerfiller.MyProfileActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".orders.OrderActivity"
+        <activity
+            android:name="com.bws.chillerfiller.orders.OrderActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".itemcategory.basket.BasketsActivity"
+        <activity
+            android:name="com.bws.chillerfiller.itemcategory.basket.BasketsActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".orders.SearchOrderActivity"></activity>
-        <activity android:name=".enotes.EnotesActivity"
+        <activity android:name="com.bws.chillerfiller.orders.SearchOrderActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.bws.chillerfiller.enotes.EnotesActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".login.LoginActivityTest"
             android:screenOrientation="portrait"></activity>
 
     </application>

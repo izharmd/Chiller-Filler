@@ -21,49 +21,55 @@
 
 
     <EditText
+        android:id="@+id/edtTitle"
         style="@style/editText"
         android:layout_marginTop="@dimen/_20sdp"
         android:background="@drawable/round_textview"
         android:drawableLeft="@drawable/title_24"
         android:hint="Title"
-        android:textColorHint="@color/black"></EditText>
+        android:textColorHint="@color/black"/>
 
 
     <EditText
+        android:id="@+id/edtFName"
         style="@style/editText"
         android:background="@drawable/round_textview"
         android:drawableLeft="@drawable/first_name_24"
         android:hint="First name"
-        android:textColorHint="@color/black"></EditText>
+        android:textColorHint="@color/black"/>
 
 
     <EditText
+        android:id="@+id/edtLName"
         style="@style/editText"
         android:background="@drawable/round_textview"
         android:drawableLeft="@drawable/first_name_24"
         android:hint="Last name"
-        android:textColorHint="@color/black"></EditText>
+        android:textColorHint="@color/black"/>
 
 
     <EditText
+        android:id="@+id/edtEmail"
         style="@style/editText"
         android:background="@drawable/round_textview"
         android:drawableLeft="@drawable/email_24"
         android:hint="Email"
-        android:textColorHint="@color/black"></EditText>
+        android:textColorHint="@color/black"/>
 
     <EditText
+        android:id="@+id/edtMobileNo"
         style="@style/editText"
         android:background="@drawable/round_textview"
         android:drawableLeft="@drawable/phone_24"
         android:hint="Mobile"
         android:inputType="phone"
         android:maxLength="10"
-        android:textColorHint="@color/black"></EditText>
+        android:textColorHint="@color/black"/>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/txtRegister"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/_35sdp"
         android:layout_marginLeft="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_20sdp"
         android:layout_marginRight="@dimen/_10sdp"
@@ -71,10 +77,11 @@
         android:text="REGISTER"
         android:textColor="@color/black"
         android:textSize="@dimen/_14sdp"
-        android:textStyle="bold"></androidx.appcompat.widget.AppCompatButton>
+        android:textStyle="bold"/>
 
 
     <LinearLayout
+        android:id="@+id/llDontHaveAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -89,7 +96,7 @@
             android:gravity="center|right"
             android:text="Already have an account ?"
             android:textColor="@color/black"
-            android:textSize="@dimen/_12sdp"></TextView>
+            android:textSize="@dimen/_12sdp"/>
 
         <TextView
             android:id="@+id/txtAllreadyAccount"
@@ -100,7 +107,7 @@
             android:gravity="center|left"
             android:text=" LOGIN"
             android:textColor="@color/yellow"
-            android:textSize="@dimen/_12sdp"></TextView>
+            android:textSize="@dimen/_12sdp"/>
 
 
     </LinearLayout>
@@ -119,7 +126,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.542"
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/logo3" />
+            app:srcCompat="@drawable/logo_chiller_filler" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
