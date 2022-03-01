@@ -220,6 +220,7 @@ class ProductListActivity : AppCompatActivity() {
 
     fun topCategory() {
 
+
         val categoryItem = dataMainCtegory.get(pos).arrSubCategory
         // val productType = categoryItem
 
